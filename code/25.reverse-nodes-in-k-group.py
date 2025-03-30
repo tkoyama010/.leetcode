@@ -4,7 +4,7 @@
 class Solution:
     """Provides a method to solve the Reverse Nodes in k-Group problem."""
 
-    def reverseKGroup(self, head, k):
+    def reverseKGroup(self, head: ListNode | None, k: int) -> ListNode | None:  # noqa: F821
         """Reverse the nodes of a linked list in groups of k."""
 
         def reverse_list(
