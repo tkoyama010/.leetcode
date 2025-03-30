@@ -1,11 +1,20 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+"""Module that contains a solution to the Reverse Nodes in k-Group problem."""
+
+from __future__ import annotations
+
+from typing import ListNode
+
+
 class Solution:
-    def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        def reverse_list(head, k):
+    """Provides a method to solve the Reverse Nodes in k-Group problem."""
+
+    def reverse_k_group(self: Solution, head: ListNode | None, k: int) -> ListNode | None:
+        """Reverse the nodes of a linked list in groups of k."""
+
+        def reverse_list(
+            head: ListNode | None,
+            k: int,
+        ) -> tuple[ListNode | None, ListNode | None, ListNode | None]:
             curr = head
             prev = None
             next_node = None
@@ -33,6 +42,6 @@ class Solution:
             return head
 
         new_head, tail, next_group_head = reverse_list(head, k)
-        tail.next = self.reverseKGroup(next_group_head, k)
+        tail.next = self.reverse_k_group(next_group_head, k)
 
         return new_head

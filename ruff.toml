@@ -1,0 +1,7 @@
+# ruff.toml
+
+line-length = 120
+
+[lint]
+select = ["ALL", "ANN"]
+ignore = ["N999", "D203", "D213"]
