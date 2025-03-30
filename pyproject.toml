@@ -1,7 +1,0 @@
-[tool.ruff]
-line-length = 88
-select = ["ALL"]
-ignore = []
-
-[tool.ruff.format]
-docstring-line-length = true
