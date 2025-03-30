@@ -4,13 +4,13 @@
 class Solution:
     """Provides a method to solve the Reverse Nodes in k-Group problem."""
 
-    def reverseKGroup(self, head: ListNode | None, k: int) -> ListNode | None:  # noqa: N802, F821
+    def reverseKGroup(self, head, k):
         """Reverse the nodes of a linked list in groups of k."""
 
         def reverse_list(
-            head: ListNode | None,  # noqa: F821
-            k: int,
-        ) -> tuple[ListNode | None, ListNode | None, ListNode | None]:  # noqa: F821
+            head,
+            k,
+        ):
             curr = head
             prev = None
             next_node = None

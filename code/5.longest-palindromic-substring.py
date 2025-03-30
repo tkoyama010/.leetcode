@@ -6,7 +6,7 @@ MAGIC_NUMBER = 2
 class Solution:
     """Provides a method to solve the Longest Palindromic Substring problem."""
 
-    def longestPalindrome(self, s: str) -> str:  # noqa: N802
+    def longestPalindrome(self, s):
         """Find the longest palindromic substring within a given string."""
         n = len(s)
         if n < MAGIC_NUMBER:
