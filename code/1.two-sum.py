@@ -4,7 +4,7 @@
 class Solution:
     """Solve the Two Sum problem."""
 
-    def twoSum(self, nums: list[int], target: int) -> list[int]:  # noqa: N802
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         """Find two numbers in a list that add up to a given target."""
         num_map = {}
         for i, num in enumerate(nums):
