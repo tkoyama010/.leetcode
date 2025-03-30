@@ -1,7 +1,5 @@
 """Module that contains a solution to the Reverse Nodes in k-Group problem."""
 
-from __future__ import annotations
-
 
 class Solution:
     """Provides a method to solve the Reverse Nodes in k-Group problem."""
