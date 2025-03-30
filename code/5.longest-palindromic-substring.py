@@ -1,14 +1,12 @@
 """Module that contains a solution to the Longest Palindromic Substring problem."""
 
-from __future__ import annotations
-
 MAGIC_NUMBER = 2
 
 
 class Solution:
     """Provides a method to solve the Longest Palindromic Substring problem."""
 
-    def longest_palindrome(self: Solution, s: str) -> str:
+    def longestPalindrome(self, s: str) -> str:  # noqa: N802
         """Find the longest palindromic substring within a given string."""
         n = len(s)
         if n < MAGIC_NUMBER:

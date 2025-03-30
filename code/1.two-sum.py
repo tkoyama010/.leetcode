@@ -1,12 +1,10 @@
 """Module that implements a solution to the Two Sum problem."""
 
-from __future__ import annotations
-
 
 class Solution:
     """Solve the Two Sum problem."""
 
-    def two_sum(self: Solution, nums: list[int], target: int) -> list[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:  # noqa: N802
         """Find two numbers in a list that add up to a given target."""
         num_map = {}
         for i, num in enumerate(nums):

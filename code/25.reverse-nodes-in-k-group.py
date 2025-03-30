@@ -2,19 +2,17 @@
 
 from __future__ import annotations
 
-from typing import ListNode
-
 
 class Solution:
     """Provides a method to solve the Reverse Nodes in k-Group problem."""
 
-    def reverse_k_group(self: Solution, head: ListNode | None, k: int) -> ListNode | None:
+    def reverseKGroup(self, head: ListNode | None, k: int) -> ListNode | None:  # noqa: N802, F821
         """Reverse the nodes of a linked list in groups of k."""
 
         def reverse_list(
-            head: ListNode | None,
+            head: ListNode | None,  # noqa: F821
             k: int,
-        ) -> tuple[ListNode | None, ListNode | None, ListNode | None]:
+        ) -> tuple[ListNode | None, ListNode | None, ListNode | None]:  # noqa: F821
             curr = head
             prev = None
             next_node = None
@@ -42,6 +40,6 @@ class Solution:
             return head
 
         new_head, tail, next_group_head = reverse_list(head, k)
-        tail.next = self.reverse_k_group(next_group_head, k)
+        tail.next = self.reverseKGroup(next_group_head, k)
 
         return new_head
