@@ -16,10 +16,13 @@ code/
 ## Setup
 
 ### Prerequisites
+
 - Install [leetcode-cli](https://github.com/leetcode-tools/leetcode-cli)
 
 ### Configuration
+
 The repository is configured with `leetcode.toml`:
+
 - **Editor**: vim
 - **Language**: Python 3
 - **Code directory**: `code/`
@@ -62,6 +65,7 @@ result = solution.method_name(inputs)
 ## Development
 
 The repository uses:
+
 - **leetcode-cli** for problem management and testing
 - **Python type hints** for better code quality
 - **Docstrings** for documentation
