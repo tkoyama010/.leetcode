@@ -27,13 +27,14 @@ result = solution.method_name(inputs)
 ## Problems Solved
 
 - **Problem 1**: Two Sum
-- **Problem 5**: Longest Palindromic Substring  
+- **Problem 5**: Longest Palindromic Substring
 - **Problem 15**: 3Sum
 - **Problem 25**: Reverse Nodes in k-Group
 
 ## Development
 
 The repository uses:
+
 - Python type hints
 - Docstrings for documentation
 - Ruff for linting and formatting
