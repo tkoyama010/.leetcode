@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-A collection of Python solutions to LeetCode problems.
+A collection of Python solutions to LeetCode problems managed with [leetcode-cli](https://github.com/leetcode-tools/leetcode-cli).
 
 ## Structure
 
@@ -13,7 +13,35 @@ code/
 └── 25.reverse-nodes-in-k-group.py
 ```
 
-## Usage
+## Setup
+
+### Prerequisites
+- Install [leetcode-cli](https://github.com/leetcode-tools/leetcode-cli)
+
+### Configuration
+The repository is configured with `leetcode.toml`:
+- **Editor**: vim
+- **Language**: Python 3
+- **Code directory**: `code/`
+- **Problems cache**: `Problems`
+
+### Usage with leetcode-cli
+
+```bash
+# Show problem list
+leetcode list
+
+# Show problem details
+leetcode show <problem-id>
+
+# Test solution
+leetcode test <problem-id>
+
+# Submit solution
+leetcode submit <problem-id>
+```
+
+### Manual Usage
 
 Each file contains a `Solution` class with methods that solve the corresponding LeetCode problem:
 
@@ -34,7 +62,21 @@ result = solution.method_name(inputs)
 ## Development
 
 The repository uses:
+- **leetcode-cli** for problem management and testing
+- **Python type hints** for better code quality
+- **Docstrings** for documentation
+- **Ruff** for linting and formatting (configured in `ruff.toml`)
+- **Pre-commit hooks** for code quality checks
 
-- Python type hints
-- Docstrings for documentation
-- Ruff for linting and formatting
+### Code Quality Tools
+
+```bash
+# Run linting
+ruff check
+
+# Format code
+ruff format
+
+# Install pre-commit hooks
+pre-commit install
+```
